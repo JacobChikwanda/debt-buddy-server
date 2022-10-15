@@ -4,7 +4,7 @@ const orm = require('./models');
 require('dotenv').config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Routes
 const userRoute = require('./routes/users');
